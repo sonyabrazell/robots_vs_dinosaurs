@@ -1,13 +1,10 @@
+from herd import Herd
+
 class Dinosaur:
     def __init__(self, name, attack_power):
-        self.name = ''
-        self.attack_power = int
-        self.health = int
+        self.name = name
+        self.attack_power = attack_power
+        self.health = 10
 
     def attack(self, robot):
         pass
-
-stegosaurus = Dinosaur('James', 3)
-triceratops = Dinosaur('Lily', 3)
-brontosaurus = Dinosaur('Harry', 2)
-
