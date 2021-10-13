@@ -6,3 +6,7 @@ class Robot:
 
     def attack(self, dinosaur):
         pass
+
+robot1 = Robot('Lucius')
+robot2 = Robot('Narcissa')
+robot3 = Robot('Draco')

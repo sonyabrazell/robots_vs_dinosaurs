@@ -6,3 +6,8 @@ class Dinosaur:
 
     def attack(self, robot):
         pass
+
+stegosaurus = Dinosaur('James', 3)
+triceratops = Dinosaur('Lily', 3)
+brontosaurus = Dinosaur('Harry', 2)
+
