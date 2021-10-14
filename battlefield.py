@@ -10,20 +10,19 @@ class Battlefield:
 
 def run_game(self):
     fleet = Fleet()
-    fleet.create_fleet
+    fleet.create_fleet()
     herd = Herd()
-    herd.create_herd
+    herd.create_herd()
 
 def display_welcome(self):
     print("Welcome to the battle.")
 
 def battle(self):
     robot_battle = Robot()
-    robot_battle.attack
+    robot_battle.attack()
     dinosaur_battle = Dinosaur()
-    dinosaur_battle.attack
-    return
-
+    dinosaur_battle.attack()
+    return(robot_battle,dinosaur_battle)
 
 def dino_turn(self, dinosaur):
     turning_dino = Dinosaur()
@@ -44,7 +43,14 @@ def show_robo_opponent_options(self):
         print(robot)
 
 def display_winners(self):
-    # Winner is once all dinosaurs or all robots have reached 0 in health. If loop through,
-    # if health > 0, battle again?  Or sum of all health > 0, battle again?
-
-    self.fleet 
+    for robot in Dinosaur.attack:
+        if remaining_health > 0:
+            battle()
+        if remaining_health <= 0:
+            print("Dinosaurs win.")
+    for dinosaur in Robot.attack:
+        if remaining_health > 0:
+            battle()
+        if remaining_health <= 0:
+            print("Robots win.")
+            

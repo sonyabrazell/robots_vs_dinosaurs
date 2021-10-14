@@ -1,6 +1,10 @@
+from battlefield import Battlefield, display_welcome
 
+battle = Battlefield()
 
-from battlefield import display_welcome
+print(battle.display_welcome)
 
+Battlefield.run_game()
 
-display_welcome()
+Battlefield.battle()
+
