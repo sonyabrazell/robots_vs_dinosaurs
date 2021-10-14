@@ -22,18 +22,24 @@ def battle(self):
     robot_battle.attack
     dinosaur_battle = Dinosaur
     dinosaur_battle.attack
-    
-def dino_turn(self, dinosaur):
-    pass
 
+def dino_turn(self, dinosaur):
+    turning_dino = Dinosaur()
+    if dinosaur.turning_dino == True:
+        print(dinosaur, ' has turned.')
+    
 def robo_turn(self, robot):
-    pass
+    turning_robo = Robot()
+    if robot.turning_robo = True:
+        print(robot, " has turned.")
 
 def show_dino_opponent_options(self):
-    pass
+    for dinosaur in self.herd:
+        print(dinosaur)
 
 def show_robo_opponent_options(self):
-    pass
+    for robot in self.fleet:
+        print(robot)
 
 def display_winners(self):
     pass
