@@ -6,7 +6,7 @@ class Robot:
         self.health = 10
         self.weapon = weapon
 
-    def attack(self, dinosaur):
+    def robot_attack(self, dinosaur):
         dinosaur_health = dinosaur.health
         weapon_strength = Weapon.attack_power
         remaining_health = dinosaur_health - weapon_strength
