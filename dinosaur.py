@@ -5,8 +5,5 @@ class Dinosaur:
         self.health = 10
 
     def dinosaur_attack(self, robot):
-        robot_health = robot.health
-        dinosaur_power = self.attack_power
-        remaining_health = robot_health - dinosaur_power
-        print('After dinosaur attack,', robot.name,' now has ',remaining_health,' health remaining.')
-        return remaining_health
+        robot.health = robot.health - self.attack_power
+        print('After robot attack,', robot.name,' now has',robot.health,' health remaining.')
