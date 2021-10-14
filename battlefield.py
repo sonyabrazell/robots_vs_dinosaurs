@@ -44,13 +44,14 @@ def show_robo_opponent_options(self):
 
 def display_winners(self):
     for robot in Dinosaur.attack:
-        if remaining_health > 0:
+        robot_remaining_health = Dinosaur.remaining_health
+        if robot_remaining_health > 0:
             battle()
-        if remaining_health <= 0:
+        if robot_remaining_health <= 0:
             print("Dinosaurs win.")
     for dinosaur in Robot.attack:
-        if remaining_health > 0:
+        dinosaur_remaining_health = Robot.remaining_health
+        if dinosaur_remaining_health > 0:
             battle()
-        if remaining_health <= 0:
+        if dinosaur_remaining_health <= 0:
             print("Robots win.")
-            
