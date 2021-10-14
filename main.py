@@ -18,6 +18,8 @@ dino_turn(Herd)
 
 robo_turn(Fleet)
 
+attack(Robot, dinosaur)
+
 
 
 
