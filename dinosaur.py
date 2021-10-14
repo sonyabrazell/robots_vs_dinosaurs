@@ -10,4 +10,5 @@ class Dinosaur:
         robot_health = robot.health
         dinosaur_power = self.attack_power
         remaining_health = robot_health - dinosaur_power
-        print('After dinosaur attack, the robot now has ',remaining_health,' health remaining.')
+        print('After dinosaur attack,', robot.name,' now has ',remaining_health,' health remaining.')
+        return remaining_health

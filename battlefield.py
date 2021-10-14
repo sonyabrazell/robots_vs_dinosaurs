@@ -20,8 +20,10 @@ def display_welcome(self):
 def battle(self):
     robot_battle = Robot()
     robot_battle.attack
-    dinosaur_battle = Dinosaur
+    dinosaur_battle = Dinosaur()
     dinosaur_battle.attack
+    return
+
 
 def dino_turn(self, dinosaur):
     turning_dino = Dinosaur()
@@ -30,7 +32,7 @@ def dino_turn(self, dinosaur):
     
 def robo_turn(self, robot):
     turning_robo = Robot()
-    if robot.turning_robo = True:
+    if robot.turning_robo == True:
         print(robot, " has turned.")
 
 def show_dino_opponent_options(self):
@@ -42,4 +44,7 @@ def show_robo_opponent_options(self):
         print(robot)
 
 def display_winners(self):
-    pass
+    # Winner is once all dinosaurs or all robots have reached 0 in health. If loop through,
+    # if health > 0, battle again?  Or sum of all health > 0, battle again?
+
+    self.fleet 
