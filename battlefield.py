@@ -9,16 +9,20 @@ class Battlefield:
         self.herd = []
 
 def run_game(self):
-    Fleet.create_fleet
-    Herd.create_herd
+    fleet = Fleet()
+    fleet.create_fleet
+    herd = Herd()
+    herd.create_herd
 
 def display_welcome(self):
     print("Welcome to the battle.")
 
 def battle(self):
-    Robot.attack
-    Dinosaur.attack
-
+    robot_battle = Robot()
+    robot_battle.attack
+    dinosaur_battle = Dinosaur
+    dinosaur_battle.attack
+    
 def dino_turn(self, dinosaur):
     pass
 
