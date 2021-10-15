@@ -53,11 +53,22 @@ class Battlefield:
     def display_winners(self):
         for robot in self.herd.dinosaurs.dinosaur_attack:
             if robot.health > 0:
-                battle()
+                self.battle()
             if robot.health <= 0:
                 print("Dinosaurs win.")
         for dinosaur in self.fleet.robots.robot_attack:
             if dinosaur.health > 0:
-                battle()
+                self.battle()
             if dinosaur.health <= 0:
                 print("Robots win.")
+
+
+    def run_battle(self):
+        self.run_game()
+        self.display_welcome()
+        self.show_dino_opponent_options()
+        self.show_robo_opponent_options()
+        self.dino_turn()
+        self.robo_turn()
+        self.battle()
+        self.display_winners

@@ -7,8 +7,7 @@ class Robot:
         self.weapon = weapon
 
     def robot_attack(self, dinosaur):
-        dinosaur_health = dinosaur.health
-        weapon_strength = Weapon.attack_power
-        remaining_health = dinosaur_health - weapon_strength
-        print('After robot attack,', dinosaur.name,' now has',remaining_health,' health remaining.')
-        return remaining_health
+        dinosaur.health = dinosaur.health - self.weapon.attack_power
+        print('After robot attack,', dinosaur.name,' now has',dinosaur.health,' health remaining.')
+        
+        
